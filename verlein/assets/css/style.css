@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=League+Spartan:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* ------common------ */
+.strong {
+    font-weight: bold;
+}
+.container {
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px 16px;
+}
+.sectiontext {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.text-center {
+    margin: auto;
+    max-width: 400px;
+    padding: 150px 0px 100px;
+    text-align: center;
+}
+.paddingbottom{
+    padding-bottom: 100px;
+}
+.flex {
+    display: flex;
+}
+.block{
+    display: block;
+}
+
+/* --------header------- */
+.header {
+    text-align: center;
+    margin: 4px;
+    padding: 4px;
+}
+
+.mainbtn:hover {
+    background-image: linear-gradient(to right, #007c64, #b0977d);
+}
+
+.section4btn:hover {
+    background-image: linear-gradient(to right, #007c64, #b0977d);
+}
+
+/* ----------navbar----------*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 10px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbarlink a {
+    text-decoration: none;
+    color: black;
+}
+
+.qwe {
+    display: flex;
+    gap: 31px;
+}
+
+.logo {
+    padding: 0px 25px;
+}
+
+.iconimg {
+    padding: 0px 38px;
+    display: flex;
+    gap: 50px;
+    align-self: flex-start;
+}
+
+/* --------------------------------main--------------------------- */
+
+/* ------section1------ */
+.mainimg {
+    background: url(../image/Verlein.png);
+    width: 100%;
+    padding: 50px;
+    height: calc(100vh - 120px);
+    background-size: cover;
+}
+
+.mainh3 {
+    font-size: 80px;
+    color: white;
+}
+
+.mainbtn {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 18px 30px;
+    margin-top: 40px;
+}
+.mainimgtext{
+    max-width: 400px;
+    width: 100%;
+}
+
+
+/* --------section2----- */
+
+
+/* --------sectction3------ */
+.section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+.Verleinimg1 {
+    background-image: url(../image/Verlein1.png);
+    background-position: right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    padding: 0px 30px;
+}
+
+.Verleinimg2 {
+    width: 100%;
+}
+
+.imgtext {
+    text-align: center;
+}
+
+.imagetext {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    top: 0;
+}
+
+
+.hover {
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.abc{
+    display: none;
+}
+.overlay:hover {
+   background-color: rgba(0,0,0,0.3);
+}
+.overlay:hover > .abc{
+    display: block;
+}
+.overlay{
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+.overlay1{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+/* --------sectction4------ */
+.section4img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+.section4btn {
+    background-color: transparent;
+    padding: 10px 15px;
+}
+
+/* --------sectction5------ */
+.fullimage {
+    padding: 130px 0px;
+}
+
+.fullimage img {
+    width: 100%;
+}
+.section5 img{
+    width: 100%;
+}
+
+/*---------section6------------*/
+
+
+
+/*---------section7------------*/
+.section7 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+.section7 img {
+    width: 100%;
+}
+
+/*---------section8------------*/
+
+/*---------section9------------*/
+
+/*---------section10------------*/
+.section10 {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.section10 img {
+    width: 100%;
+}
+.custombtn1{
+    background-color: transparent;
+    color: azure;
+    padding: 5px;
+    font-size: 70px;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.custombtn2{
+    background-color: transparent;
+    color: azure;
+    padding: 5px;
+    font-size: 70px;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.swiper-button-prev, .swiper-button-next{
+    display: none!important;
+}
+
+/*-----------footer---------*/
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footericon {
+    display: grid;
+}
+
+.footersoical {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 34px;
+    max-width: 100px;
+}
+
+.footerheading {
+    /* width: 50%; */
+    padding-bottom: 20px;
+}
+
+.footerinput1 {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.footerinput {
+    border: none;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+
+.footerinput1 img {
+    align-items: end;
+}
+/* ------------------------------- */
+.hamburger{
+    display: none;
+}
+.hide{
+    display: none;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+.hidean{
+    display: none;
+}
+/*----------------------media 1200px---------------*/
+@media (max-width:1200px) {
+    .hover{
+        max-width: 280px;
+        width: 100%;
+    }
+    .hover img{
+        width: 100%;
+    }
+    .firstimg{
+        height: 500px;
+    }
+    .secondimg{
+        height: 250px;
+    }
+    .section3 {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        column-gap: 20px;
+    }
+}
+
+/*----------------------media 800px---------------*/
+@media (max-width:800px) {
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* gap: 30px; */
+        row-gap: 50px;
+        column-gap: 20px;
+    }
+    .section3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+    }
+    .Verleinimg1{
+        height: 800px;
+    }
+    .secondimg{
+        display: flex;
+    }
+    .Verleinimg2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 20px;
+    }
+}
+
+/* ------------------------maedia quary---------------*/
+@media (max-width:800px) {
+    .hamburger{
+        display: block;
+    }
+    .iconhide{
+        display: none;
+    }
+    .hide{
+        display: block;
+    }
+    .navbarlink{
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    height: calc(100vh - 4rem);
+    left: 0;
+    background-color: aliceblue;
+    transition: 0.3s;
+    display: flex;
+    /* grid-template-columns: 1fr; */
+    justify-content: space-between;
+    flex-direction: column;
+
+    }
+    .qwe{
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding: 40px;
+
+    }
+    .imagecenter{
+        display: grid;
+        place-items: center;
+    }
+    .top-0{
+        top: 0;
+    }
+}
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
